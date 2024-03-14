@@ -12,6 +12,10 @@
 ###### windows打包命令: 
     fyne package -os windows -icon 1.png
 ***
+###### 打包成功后会得到一个压缩包，打开解压后的文件夹，进入根目录右击运行终端
+###### `sudo make install`即可安装
+###### `sudo make uninstall`卸载
+***
 ###### 注意:Linux环境下C++默认已经安装，fyne环境几乎无需配置，
 ###### 但是Windows环境下C++需要安装，等环境，具体见fyne官网：
 ###### [fyne官网](https://docs.fyne.io/)
