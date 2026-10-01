@@ -10,7 +10,7 @@
     fyne package -os linux -icon 1.ico
 ***
 ###### windows打包命令: 
-    fyne package -os windows -icon 1.ico
+    fyne package -os windows -icon 1.ico -release -app-id com.ggbond.boom
 ***
 ###### 打包成功后会得到一个压缩包(上面仓库中提供了linux版本的程序压缩包[可直接使用])，
 ###### 打开解压后的文件夹，进入根目录右击运行终端
