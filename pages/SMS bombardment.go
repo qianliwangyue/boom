@@ -1,14 +1,15 @@
 package pages
 
 import (
-	"boom/pkg/get"
+	"boom/pkg/get_mouse"
 	"boom/pkg/send_sms"
+	"strconv"
+	"time"
+
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
-	"strconv"
-	"time"
 )
 
 var (
@@ -66,7 +67,7 @@ func PageBoom(app fyne.App) {
 		//fmt.Println("==========", e.Name)
 		if e.Name == fyne.KeyEscape {
 			var err error
-			X, Y, err = get.FindMousePos()
+			X, Y, err = get_mouse.FindMousePos()
 
 			if err != nil {
 				l2.SetText("获取坐标失败:" + err.Error())
