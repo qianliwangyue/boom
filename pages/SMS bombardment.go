@@ -79,5 +79,6 @@ func PageBoom(app fyne.App) {
 
 	//
 	window.Resize(fyne.NewSize(120, 350))
+	window.SetFixedSize(true)
 	window.Show()
 }
